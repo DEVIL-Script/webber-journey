@@ -93,6 +93,7 @@ a:active {
     color: brown;
 }
 
-.address {
-   margin-bottom: 5px;
+address {
+    font-style: normal;
+    margin-bottom: 5px;
 }
