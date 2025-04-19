@@ -1,0 +1,116 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: rosybrown;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+a {
+    color: #6A0DAD;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    letter-spacing: 0.5px;
+}
+
+a:hover {
+    color: #A0522D;
+    text-decoration: underline;
+    text-shadow: 0 0 5px rgba(160, 82, 45, 0.3);
+}
+
+a:active {
+    color: #8B0000;
+}
+
+.business-card {
+    text-align: center;
+    font-size: 16px;
+    width: 90%;
+    max-width: 300px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.business-card a {
+    margin-top: 5px;
+    display: inline-block;
+    font-size: 0.9rem;
+}
+
+.business-card a:hover {
+    color: #A0522D;
+    text-decoration: underline;
+    transform: scale(1.01);
+}
+
+.profile-image {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.social-media {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.social-media h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.social-media a {
+    display: inline-block;
+    width: 70px;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: transform 0.3s ease;
+}
+
+.social-media a:hover {
+    transform: translateY(-5px);
+
+}
+
+.social-media-icon:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease;
+}
+
+.social-media-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+    margin-bottom: 8px;
+    display:  block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+.full-name {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.5px;
+    text-transform: capitalize;
+}
