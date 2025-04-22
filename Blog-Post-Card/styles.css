@@ -1,6 +1,6 @@
 html {
     min-height: 100%;
-    background: linear-gradient(to bottom, #f8f9fa, #e9ecef);
+    background: linear-gradient(to bottom right, #fdf2f8, #e7efff);
 }
 
 body {
@@ -8,13 +8,22 @@ body {
     margin: 0;
     padding: 20px;
     color: #212529;
-    background: linear-gradient(to bottom, #f8f9fa, #e9ecef);
     text-align: center; 
+    display: flex;
+    justify-content: center;
+
+}
+
+.main-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
+    font-size: 1rem;
+    margin-bottom: 1.25rem;
     color: #343a40;
 }
 
@@ -25,8 +34,75 @@ p {
 }
 
 
+/* Glassmorphism Dev Vibe */
 
-.blog-post-card {
+.blog-post-card1 {
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    margin: 20px auto;
+    width: auto;
+    max-width: 400px;
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+    
+}
+
+
+
+.blog-post-card1:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.post-img1 {
+    width: 100%;
+    object-fit: cover;
+}
+
+.post-content1 {
+    padding: 20px;
+    margin: 5px 0;
+}
+
+.post-title1 {
+    font-size: 22px;
+    margin: 10px 0;
+    color: #222;
+}
+
+.post-excerpt1 {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.read-more1 {
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    padding: 10px 20px;
+    border-radius: 6px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    
+}
+
+.read-more1:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Minimal UI Concepts */
+
+
+.blog-post-card2 {
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
@@ -38,12 +114,12 @@ p {
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.blog-post-card:hover {
+.blog-post-card2:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
 }
 
-.post-img {
+.post-img2 {
     width: 100%;
     height: auto;
     border-radius: 8px;
@@ -51,24 +127,24 @@ p {
     margin-bottom: 15px;
 }
 
-.post-content {
+.post-content2 {
     padding: 5px;
     margin: 5px 0;
 }
 
-.post-title {
+.post-title2 {
     font-size: 22px;
     margin: 10px 0;
     color: #222;
 }
 
-.post-excerpt {
+.post-excerpt2 {
     font-size: 16px;
     color: #555;
     margin-bottom: 15px;
 }
 
-.read-more {
+.read-more2 {
     display: inline-block;
     padding: 10px 20px;
     border-radius: 6px;
@@ -77,9 +153,10 @@ p {
     text-decoration: none;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s, box-shadow 0.3s;
+    justify-content: center;
 }
 
-.read-more:hover {
+.read-more2:hover {
     background-color: #0056b3;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
