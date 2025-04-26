@@ -76,10 +76,11 @@ section {
     background-color: whitesmoke;
     padding: 20px;
     border-radius: 10px;
+    transition: transform 0.3s ease;
 }
 
 section:hover {
-    transform: skewX(10deg)
+    transform: skewX(10deg);
 }
 
 section:target {
