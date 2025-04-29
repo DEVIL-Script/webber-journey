@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    height: 100vh;
+}
+
+.color-grid {
+    display: flex;
+    gap: 15px;
+}
+
+.color-box {
+    display: inline-block;
+    border-radius: 8px;
+    width: 100px;
+    height: 100px;
+}
+
+
+.color1 {
+    background-color: #ff5733;
+  }
+  
+  .color2 {
+    background-color: rgb(60, 179, 113);
+  }
+  
+  .color3 {
+    background-color: dodgerblue;
+  }
+  
+  .color4 {
+    background-color: hsl(39, 100%, 50%);
+  }
+  
+  .color5 {
+    background-color: coral;
+  }
+  
