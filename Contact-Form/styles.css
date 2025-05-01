@@ -1,0 +1,96 @@
+body {
+    background: linear-gradient(to bottom right, #ffecd2, #fcb69f);
+    font-family: BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    min-height: 100vh;
+}
+
+.form-container {
+    background-color: #ffffff50;
+    border-radius: 15px;
+    padding: 25px;
+    width: 370px;
+    margin: 0 auto;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.form-container form {
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+h2 {
+    margin: 0 -20px 20px -20px;
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 2px solid #ffffff;
+    color: #5e4b3c;
+}
+
+
+.input-group {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0 5px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+    border-bottom: 1.5px solid #ffffff;
+    color: #5e4b3c;
+}
+
+input {
+    height: 50px;
+}
+
+textarea {
+    padding: 10px 5px;
+    resize: none;
+    min-height: 5px;
+    overflow: hidden;
+}
+
+label {
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    color: #5e4b3cda;
+    font-size: 16px;
+    pointer-events: none;
+    transition: all 0.5s ease;
+    padding: 0 2px;
+}
+
+input:focus + label,
+input:not(:placeholder-shown) + label,
+textarea:focus + label,
+textarea:not(:placeholder-shown) + label {
+    transform: translateY(-20px);
+    font-size: 13px;
+}
+
+button {
+    background-color: #f28c8c;
+    color: white;
+    font-size: 18px;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.5s ease;
+    display: block;
+    margin: 20px auto 0 auto;
+}
+
+button:hover {
+    background-color: #e57474;
+}
