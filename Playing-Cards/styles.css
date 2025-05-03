@@ -1,0 +1,60 @@
+
+
+body {
+    background-color: #eeeeee;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    padding: 40px;
+}
+
+#playing-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.card {
+    width: 150px;
+    height: 220px;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.hearts, .diamonds{
+    color: red;
+}
+
+.clubs {
+    color: black;
+}
+
+.left, .middle, .right {
+    display: flex;
+    font-size: 18px;
+}
+
+.left {
+    align-self: flex-start;
+}
+
+.middle {
+    flex-direction: column;
+    align-self: center;
+    font-size: 3em;
+}
+
+.right {
+    align-self: flex-end;
+    transform: rotate(180deg);
+}
