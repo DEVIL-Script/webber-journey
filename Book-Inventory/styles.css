@@ -1,0 +1,108 @@
+span {
+  display: inline-block;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 2rem;
+  margin-top: 4rem;
+  background: #f4f4f4;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 2em;
+  font-weight: bolder;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  font-size: clamp(0.8rem, 1.2vw, 1rem);
+}
+
+th, td {
+  padding: 0.8rem 0.6rem;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+th {
+  background: #ddd;
+}
+
+tr[class="read"] {
+  background-image: linear-gradient(to right, #d4edda, #ffffff);
+}
+
+tr[class="to-read"] {
+  background-image: linear-gradient(to right, #fff3cd, #ffffff);
+}
+
+tr[class="in-progress"] {
+  background-image: linear-gradient(to right, #d1ecf1, #ffffff);
+}
+
+span[class="status"], span[class^="rate"] {
+  display: inline-block;
+  height: 1.5rem;
+  padding: 0 0.6rem;
+  width: 90%;
+  vertical-align: middle;
+}
+
+span[class="status"] {
+  line-height: 1.5rem;
+  text-align: center;
+  min-width: 80px;
+  max-width: 100px;
+  font-size: 16px;
+  border-radius: 20px;
+}
+
+span[class^="rate"] {
+  display: inline-flex;
+  padding: 0;
+  height: auto;
+}
+
+span[class^="rate"] > span {
+  display: inline-block;
+  height: 1rem;
+  width: 1rem;
+  margin: 0 2px;
+  border: 1px solid #999;
+  border-radius: 50%;
+  background-color: #eee;
+}
+
+tr[class="read"] span[class="status"] {
+  border: 1px solid green;
+  background-image: linear-gradient(to right, #a8e6cf, #dcedc1);
+}
+
+tr[class="to-read"] span[class="status"] {
+  border: 1px solid orange;
+  background-image: linear-gradient(to right, #ffd3a5, #fd6585);
+}
+
+tr[class="in-progress"] span[class="status"] {
+  border: 1px solid blue;
+  background-image: linear-gradient(to right, #89f7fe, #66a6ff);
+}
+
+span[class~="one"] > span:first-child {
+  background-image: linear-gradient(to bottom, gold, orange);
+}
+
+span[class~="two"] > span:first-child,
+span[class~="two"] > span:nth-child(2) {
+  background-image: linear-gradient(to bottom, gold, orange);
+}
+
+span[class~="three"] span {
+  background-image: linear-gradient(to bottom, gold, orange);
+}
