@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JavaScript Documentation</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <nav id="navbar">
+            <header>JavaScript Documentation</header>
+            <a href="#Introduction" class="nav-link">Introduction</a>
+            <a href="#Variables" class="nav-link">Variables</a>
+            <a href="#Data_Types" class="nav-link">Data Types</a>
+            <a href="#Functions" class="nav-link">Functions</a>
+            <a href="#Objects" class="nav-link">Objects</a>
+            <a href="#Arrays" class="nav-link">Arrays</a>
+        </nav>
+        <main id="main-doc">
+            <section class="main-section" id="Introduction">
+                <header>Introduction</header>
+                <p>JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them.</p>
+                <p>JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements.</p>
+                <code>function greetMe(yourName) { alert("Hello " + yourName); } greetMe("World");</code>
+                <p>Client-side JavaScript extends the core language by supplying objects to control a browser and its Document Object Model (DOM). For example, client-side extensions allow an application to place elements on an HTML form and respond to user events such as mouse clicks, form input, and page navigation.</p>
+            </section>
+
+
+            <section class="main-section" id="Variables">
+                <header>Variables</header>
+                <p>You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules.</p>
+                <p>A JavaScript identifier must start with a letter, underscore (_), or dollar sign ($); subsequent characters can also be digits (0-9). Because JavaScript is case sensitive, letters include the characters "A" through "Z" (uppercase) and the characters "a" through "z" (lowercase).</p>
+                <code>var x = 42;  // Global variable let y = 13;  // Block-scoped variable const PI = 3.14;  // Constant</code>
+                <p>You can declare variables in three ways:</p>
+                <ul>
+                    <li>With the keyword var. For example, <code>var x = 42</code>.</li>
+                    <li>With the keyword let. For example, <code>let y = 13</code>.</li>
+                    <li>With the keyword const. For example, <code>const PI = 3.14</code>.</li>
+                </ul>
+            </section>
+            
+
+            <section class="main-section" id="Data_Types">
+                <header>Data Types</header>
+                <p>The latest ECMAScript standard defines eight data types:</p>
+                <ul>
+                    <li>Seven primitive data types: Boolean, Null, Undefined, Number, BigInt, String, Symbol</li>
+                    <li>and Object</li>
+                </ul>
+                <p>Although these data types are a relatively small amount, they enable you to perform useful functions with your applications.</p>
+                <code>
+                    // Numbers let num = 42; let decimal = 3.14; 
+                    // Strings let name = "John";
+                    // Booleans let isTrue = true;
+                    // Arrays let list = [1, 2, 3];
+                    // Objects let person = { name: "John", age: 30 };
+                </code>
+            </section>
+            
+
+            <section class="main-section" id="Functions">
+                <header>Functions</header>
+                <p>A function definition (also called a function declaration, or function statement) consists of the function keyword, followed by:</p>
+                <ul>
+                    <li>The name of the function.</li>
+                    <li>A list of parameters to the function, enclosed in parentheses and separated by commas.</li>
+                    <li>The JavaScript statements that define the function, enclosed in curly brackets, { }.</li>
+                </ul>
+                <code>
+                    function square(number) { return number * number; }
+                    // Arrow function const square = (number) => number * number;
+                </code>
+                    <p>Functions are first-class objects in JavaScript, meaning they can be:</p>
+                <ul>
+                    <li>Assigned to variables</li>
+                    <li>Passed as arguments to other functions</li>
+                    <li>Returned from other functions</li>
+                </ul>
+            </section>
+            
+            <section class="main-section" id="Objects">
+                <header>Objects</header>
+                <p>Objects in JavaScript, just as in many other programming languages, can be compared to objects in real life. The concept of objects in JavaScript can be understood with real life, tangible objects.</p>
+                <p>In JavaScript, an object is a standalone entity, with properties and type. Compare it with a cup, for example. A cup is an object, with properties. A cup has a color, a design, weight, a material it is made of, etc.</p>
+                <code>const car = { make: 'Toyota', model: 'Corolla', year: 2020, start: function() { console.log('Engine started'); } };</code>
+                <p>You can access object properties in two ways:</p>
+                <code>
+                    // Dot notation car.make;  // Returns 'Toyota'
+                    // Bracket notation car['model'];  // Returns 'Corolla'
+                </code>
+            </section>
+
+
+            <section class="main-section" id="Arrays">
+                <header>Arrays</header>
+                <p>Arrays are list-like objects whose prototype has methods to perform traversal and mutation operations. Neither the length of a JavaScript array nor the types of its elements are fixed.</p>
+                <p>Arrays cannot use strings as element indexes (as in an associative array) but must use integers. Setting or accessing via non-integers using bracket notation (or dot notation) will not set or retrieve an element from the array list itself, but will set or access a variable associated with that array's object property collection.</p>
+                <code>const fruits = ['Apple', 'Banana']; console.log(fruits length);  // 2</code>
+                <p>Common array methods include:</p>
+                <ul>
+                    <li><code>push()</code> - Adds one or more elements to the end</li>
+                    <li><code>pop()</code> - Removes the last element</li>
+                    <li><code>shift()</code> - Removes the first element</li>
+                    <li><code>unshift()</code> - Adds one or more elements to the beginning</li>
+                </ul>
+            </section>
+        </main>
+    </body>
+</html>
