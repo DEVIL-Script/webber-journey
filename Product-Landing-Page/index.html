@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Product Landing Page</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <header id="header">
+            <img id="header-img" src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="FlexFit Logo">
+            <nav id="nav-bar">
+                <a class="nav-link" href="#features">Features</a>
+                <a class="nav-link" href="#demo-video">Demo</a>
+                <a class="nav-link" href="#contact">Subscribe</a>
+            </nav>
+        </header>
+
+        <section id="features">
+            <h2>🚀 What Makes FlexFit Special?</h2>
+            <p>Smart tools designed to boost your productivity, whether you're a student, creator, or entrepreneur.</p>
+
+            <div class="features">
+            <div class="feature-box">
+                <span>🧠</span>
+                <h3>Smart AI Suggestions</h3>
+                <p>FlexFit helps you focus on tasks with smart suggestions and gentle nudges.</p>
+            </div>
+            <div class="feature-box">
+                <span>📅</span>
+                <h3>Integrated Planner</h3>
+                <p>Stay organized with built-in to-dos, goals, and daily overviews.</p>
+            </div>
+            <div class="feature-box">
+                <span>📈</span>
+                <h3>Progress Tracking</h3>
+                <p>Visualize your journey and see real results over time.</p>
+            </div>
+            </div>
+        </section>
+
+        <section id="demo-video">
+            <h2>🎥 See FlexFit In Action</h2>
+            <video
+                id="video"
+                controls
+                width="100%"
+                poster="https://images.pexels.com/photos/3184325/pexels-photo-3184325.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                >
+                <source src="https://videos.pexels.com/video-files/3129671/3129671-uhd_2560_1440_30fps.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <section id="contact">
+            <h2>📬 Stay in the Loop</h2>
+            <form id="form" action="https://www.freecodecamp.org/email-submit">
+            <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                placeholder="Enter your email address" 
+                required/>
+            <input type="submit" id="submit" value="Subscribe Now"/>
+            </form>
+        </section>
+        <!-- &copy; will add copyright icon -->
+        <footer>
+            &copy; 2025 FlexFit — Where Simplicity Meets Productivity.
+        </footer>
+    </body>
+</html>
