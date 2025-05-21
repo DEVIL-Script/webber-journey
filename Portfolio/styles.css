@@ -398,54 +398,63 @@ p {
 #about {
     padding: 8rem 5%;
     background: var(--secondary-background);
-}
-
-.about-content {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.about-text p {
-    color: #666;
-    margin-bottom: 2rem;
-    font-size: 1.1rem;
-    line-height: 1.8;
     text-align: center;
 }
 
+.about-content {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-text p {
+    color: var(--text-secondary);
+    margin: 0 auto 2rem;
+    font-size: 1.15rem;
+    line-height: 1.8;
+    text-align: center;
+    max-width: 600px;
+}
+
 .passion-list {
-    margin: 1.5rem 0;
-    padding-left: 1.2rem;
-    list-style-type: none;
+    list-style: none;
+    padding: 0;
+    margin: 2rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.8rem;
+    max-width: 600px;
 }
 
 .passion-list li {
-    margin-bottom: 0.8rem;
-    position: relative;
-    padding-left: 1.8rem;
+    background: rgba(154, 107, 255, 0.1);
+    padding: 0.6rem 1.2rem;
+    border-radius: 50px;
     font-size: 1.1rem;
-    color: var(--text-secondary);
-    line-height: 1.6;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .passion-list li::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0.4rem;
-    width: 1rem;
-    height: 1rem;
-    background-color: var(--accent);
-    border-radius: 2px;
-    opacity: 0.7;
+    content: none;
+}
+
+.skills {
+    margin-top: 3rem;
+    width: 100%;
 }
 
 .skills h4 {
-    margin-top: 2.5rem;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: var(--accent);
-    margin-bottom: 1rem;
-    font-family: var(--font-heading);
+    margin-bottom: 1.5rem;
 }
 
 .skill-items {
