@@ -1,6 +1,5 @@
 /**
- * Portfolio JavaScript - DEVIL-Script
- * Verified Complete Version
+ * Portfolio JavaScript
  */
 
 document.addEventListener('DOMContentLoaded', function() {
