@@ -1,23 +1,18 @@
-const darkColorsArr = [
-    '#2c3e50', '#34495e', '#16a085', '#27ae60',
-    '#2980b9', '#8e44ad', '#2c3e50', '#d35400',
-    '#c0392b', '#7f8c8d'
-];
+var darkColorsArr = ["#2C3E50", "#34495E", "#2C2C2C", "#616A6B", "#4A235A", "#2F4F4F", "#0E4B5A", "#36454F", "#2C3E50", "#800020"];
 
-const body = document.querySelector('body');
-const bgHexCodeSpanElement = document.getElementById('bg-hex-code');
-const btn = document.getElementById('btn');
-
-function getRandomIndex(arr) {
-    const randomIndex = Math.floor(Math.random() * arr.length);
-    return randomIndex;
+function getRandomIndex() {
+  var randomIndex = Math.floor(darkColorsArr.length * Math.random());
+  return randomIndex;
 }
+
+const body = document.querySelector("body");
+var bgHexCodeSpanElement = document.querySelector("#bg-hex-code");
 
 function changeBackgroundColor() {
-    const color = darkColorsArr[getRandomIndex(darkColorsArr)];
-    
-    body.style.backgroundColor = color;
-    bgHexCodeSpanElement.textContent = color;
+  var color = darkColorsArr[getRandomIndex()];
+  bgHexCodeSpanElement.innerText = color;
+  body.style.backgroundColor = color;
 }
 
-btn.addEventListener('click', changeBackgroundColor);
+var btn = document.querySelector("#btn");
+btn.addEventListener("click", changeBackgroundColor);
